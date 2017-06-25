@@ -1,0 +1,80 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1520775,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.init(Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Perfrom all the steps defined in stepdefinition file.",
+        "description": "",
+        "id": "test-all-the-stepdefs;perfrom-all-the-steps-defined-in-stepdefinition-file.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13961506543,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I launch app",
+            "match": {
+              "location": "StepDefinition.launchApp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 398862640,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)\r\n\tat org.openqa.selenium.support.ui.FluentWait.\u003cinit\u003e(FluentWait.java:96)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:71)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:45)\r\n\tat com.qea.aws.repo.Global.findElementType(Global.java:48)\r\n\tat com.qea.aws.repo.Global.genericClick(Global.java:136)\r\n\tat com.qea.aws.tests.StepDefinition.clickElement(StepDefinition.java:57)\r\n\tat ✽.When I click \"signInBtn\" on \"netflixHome\" screen(Test.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I click \"signInBtn\" on \"netflixHome\" screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "signInBtn",
+                  "offset": 9
+                },
+                {
+                  "val": "netflixHome",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinition.clickElement(String,String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Test all the stepDefs",
+    "description": "",
+    "id": "test-all-the-stepdefs",
+    "keyword": "Feature",
+    "uri": "Test.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@DemoFeatureFile"
+      }
+    ]
+  }
+]
